@@ -1,0 +1,21 @@
+<h2 mat-dialog-title>Add Todo</h2>
+<mat-dialog-content class="mat-typography">
+    <form class="example-form" #form="ngForm" novalidate>
+        <mat-form-field class="example-full-width">
+            <mat-label>Title</mat-label>
+            <input matInput placeholder="title" name="title" [(ngModel)]="todo.title" #title="ngModel" required>
+            <mat-error *ngIf="title.invalid && (title.dirty || title.touched)">
+              title is <strong>required</strong>
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <mat-label>Description</mat-label>
+            <textarea matInput placeholder="description" name="description" [(ngModel)]="todo.description" #description="ngModel"></textarea>
+        </mat-form-field>
+        <mat-checkbox name="isCompleted" [(ngModel)]="todo.isCompleted">isCompleted</mat-checkbox>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [disabled]="!form.form.valid"  (click)="onClickUpdate()">Update todo</button>
+</mat-dialog-actions>
