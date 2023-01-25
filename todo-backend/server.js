@@ -16,7 +16,7 @@ app.use('/api/todo', todoRoutes);
 
 app.get('', (req, res) => {
   res.status(200).json({
-    message: 'hellow world!',
+    message: 'Hello World!',
   });
 });
 
