@@ -5,7 +5,7 @@
         "node": ">=18 <19"
     },
     "scripts": {
-        "start": "cd todo-backend && node server.js",
+        "start": "cd todo-backend/src && node server.js",
         "prebuild": "cd todo-backend && npm run build",
         "build": "cd todo-frontend && npm run build"
     }
