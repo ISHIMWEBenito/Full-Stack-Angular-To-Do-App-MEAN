@@ -1,0 +1,12 @@
+{
+    "name": "todo-app",
+    "version": "1.0.0",
+    "engines": {
+        "node": ">=18 <19"
+    },
+    "scripts": {
+        "start": "cd todo-backend && node server.js",
+        "prebuild": "cd todo-backend && npm run build",
+        "build": "cd todo-frontend && npm run build"
+    }
+}
