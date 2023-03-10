@@ -1,3 +1,3 @@
-# Full-Stack-Angular-To-Do-App-MEAN
+# Full Stack MEAN To Do Application
 
 🌍 Website: https://todo-application-u1oq.onrender.com
